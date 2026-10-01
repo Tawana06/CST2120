@@ -1,0 +1,80 @@
+/* Header */
+.site-header {
+    color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+  background: #cccccc url("../Images/winter.jpg") no-repeat center / cover fixed;
+}
+.navbar {
+    list-style: none;
+  overflow: hidden;
+}
+
+.navbar ul {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+    background-color:#ff7f50;
+    text-align: center;
+    min-width: 100px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    transform: translateY(-5px);
+}
+
+.bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.bottom-navbar ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+.bottom-navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+    background-color:#ff7f50;
+    text-align: center;
+    min-width: 100px;
+}
+.bottom-navbar a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    transform: translateY(-5px);
+}
