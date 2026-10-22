@@ -6,10 +6,23 @@
 }
 
 body {
-  background: #cccccc url("../Images/winter.jpg") no-repeat center / cover fixed;
+  background: #cccccc url("../Images/winter.jpg");
+  overflow: hidden;
+  height : 100vh;
+
 }
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.85); /* White background, mostly opaque */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 20px auto; /* Centers it on the page */
+}
+
 .navbar {
-    list-style: none;
+  list-style: none;
   overflow: hidden;
 }
 
@@ -46,7 +59,6 @@ body {
     left: 0;
     right: 0;
     width: 100%;
-    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,4 +89,225 @@ body {
     background-color: #ddd;
     border-radius: 5px;
     transform: translateY(-5px);
+}
+
+
+.registration-form,.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.registration-form h2, .login-form h2 {
+    text-align: center;
+    color: #000;
+    margin: 0;
+}
+
+.registration-form form, .login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.registration-form form div,.login-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.registration-form label,.login-form label {
+    font-weight: bold;
+    color: #000;
+}
+
+.registration-form input,.login-form input {
+    padding: 10px;
+    border: 2px solid #ff7f50;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.registration-form button,.login-form button{
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #ff7f50;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.registration-form button:hover,.login-form button:hover {
+    background-color: #ddd;
+    transform: translateY(-3px);
+}
+
+#login_message,#registration_message {
+    text-align: center;
+    font-weight: bold;
+    color: #b00020;
+    margin-top: 15px;
+}
+/* Leaderboard */
+.leaderboard {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard h2 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+#leaderboardTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+#leaderboardTable th,
+#leaderboardTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #ff7f50;
+}
+
+#leaderboardTable th {
+    background-color: #ff7f50;
+    color: #000;
+    font-weight: bold;
+}
+
+#leaderboardTable tbody tr:hover {
+    background-color: #ffe0d1;
+}
+
+/* Highlight the top 3 */
+#leaderboardTable tbody tr:nth-child(1) td {
+    font-weight: bold;
+    background-color: #fff4c2;
+}
+
+#leaderboardTable tbody tr:nth-child(2) td {
+    background-color: #f0f0f0;
+}
+
+#leaderboardTable tbody tr:nth-child(3) td {
+    background-color: #f7e6d5;
+}
+
+.success{
+    color: green;
+}
+
+.error{
+    color: red;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bottom-navbar button {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+    background-color: #ff7f50;
+    text-align: center;
+    min-width: 100px;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.bottom-navbar button:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    transform: translateY(-5px);
+}
+
+/* Game area */
+.game-area {
+    max-width: 560px;
+    margin: 10px auto 900px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+
+.game-area h2 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+#gameCanvas {
+    background-color: #ffffff;
+    border: 3px solid #ff7f50;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+.game-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.game-controls button {
+    padding: 10px 24px;
+    background-color: #ff7f50;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.game-controls button:hover {
+    background-color: #ddd;
+    transform: translateY(-3px);
+}
+
+#gameMessage {
+    text-align: center;
+    font-weight: bold;
+    color: #b00020;
+    margin-top: 15px;
+    min-height: 20px;
 }

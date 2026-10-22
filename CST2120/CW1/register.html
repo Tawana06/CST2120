@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Registration</title>
+    <link rel="stylesheet" href="CSS Files/style.css">
+</head>
+
+<body>
+   
+
+    <main>
+        <section class="registration-form">
+            <h2>Register Your Penguin🐧</h2>
+
+            <form id = "registration_form">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div>
+                     <label for="email">Email:</label>
+                     <input type="text" id="email" name="email">
+                </div>
+
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" name="age">
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div>
+                   <label for="confirmPassword">Confirm Password:</label>
+                   <input type="confirmPassword" id="confirmPassword" name="confirmPassword">
+                </div>
+
+                <button type="submit">Register</button>
+            </form>
+            <p id ="registration_message"></p>
+        </section>
+    </main>
+
+    <header class ="site-header">   
+
+        <nav class="bottom-navbar">
+             <!-- Left side -->
+            <ul>
+              <li><a href="index.html">Main Page🐧</a></li>
+              <li><a href="tutorial.html">Tutorial🐧</a></li>
+              <li><a href="game.html">Start Game🐧</a></li>
+            </ul>
+        
+             <!-- Right side -->
+            <ul>
+              <li><a href="login.html">Login🐧</a></li>
+              <li><a href="leaderboard.html">Leaderboard🏆</a></li>
+              <li><button id="logoutButton" class="nav-logout">Logout🚪</button></li>
+            </ul>
+        
+        </nav>   
+    </header>
+    
+    <script src="js/register.js"></script>   
+
+</body>
+</html>

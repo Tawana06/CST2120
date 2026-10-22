@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Game -Arctic Maze Dash</title>
+    <link rel="stylesheet" href="CSS Files/style.css">
+</head>
+<body>
+    
+
+    <main>
+        <section class = "game-area">
+            <h2>Level<span id = "levelDisplay">1</span></h2>
+
+            <canvas id = "gameCanvas" width ="500" height = "500"></canvas>
+
+            <div class = "game-conntrols">
+                <button id = "startButton">Start Game</button>
+                <button id = "restartButton">Restart Game</button>
+            </div>
+
+            <p id = "gameMessage"></p>
+
+        </section>
+    </main>
+
+    <header class ="site-header">   
+        <nav class="bottom-navbar">
+               <!-- Left side -->
+              <ul>
+                <li><a href="index.html">Main Page🐧</a></li>
+                <li><a href="tutorial.html">Tutorial🐧</a></li>
+                <li><a href="login.html">Login🐧</a></li>
+              </ul>
+        
+              <!-- Right side -->
+              <ul>
+                <li><a href="register.html">Register🐧</a></li>
+                <li><a href="leaderboard.html">Leaderboard🏆</a></li>
+                <li><button id="logoutButton" class="nav-logout">Logout🚪</button></li>
+              </ul>
+            </nav>
+        </header>
+    </header>
+
+        <!-- Sound Effects -->
+    <audio id="bgMusic" src="sounds/backgroundmusic.mp3" loop></audio>
+    <audio id="winSound" src="sounds/win.mp3"></audio>
+    <audio id="loseSound" src="sounds/lose.mp3"></audio>
+
+    <script type = "module" src = "js/game.js"></script>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
